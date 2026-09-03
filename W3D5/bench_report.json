@@ -1,0 +1,64 @@
+{
+  "runs": [
+    {
+      "timestamp": 1788432797,
+      "base_url": "http://localhost:8000",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct-AWQ",
+      "requests_per_level": 20,
+      "max_tokens": 128,
+      "prompt_file": "prompts.txt",
+      "levels": [
+        {
+          "concurrency": 1,
+          "tokens_per_s": 83.5,
+          "ttft_p50_s": 0.0539,
+          "ttft_p95_s": 0.0847,
+          "latency_p95_s": 1.5388,
+          "errors": 0,
+          "ok": 20,
+          "wall_s": 23.989
+        },
+        {
+          "concurrency": 2,
+          "tokens_per_s": 158.85,
+          "ttft_p50_s": 0.0543,
+          "ttft_p95_s": 0.0795,
+          "latency_p95_s": 1.6164,
+          "errors": 0,
+          "ok": 20,
+          "wall_s": 12.61
+        },
+        {
+          "concurrency": 4,
+          "tokens_per_s": 275.37,
+          "ttft_p50_s": 0.0647,
+          "ttft_p95_s": 0.1225,
+          "latency_p95_s": 1.77,
+          "errors": 0,
+          "ok": 20,
+          "wall_s": 7.274
+        },
+        {
+          "concurrency": 8,
+          "tokens_per_s": 463.05,
+          "ttft_p50_s": 0.1243,
+          "ttft_p95_s": 0.1718,
+          "latency_p95_s": 1.9972,
+          "errors": 0,
+          "ok": 20,
+          "wall_s": 4.326
+        },
+        {
+          "concurrency": 16,
+          "tokens_per_s": 723.84,
+          "ttft_p50_s": 0.248,
+          "ttft_p95_s": 0.2508,
+          "latency_p95_s": 2.4006,
+          "errors": 0,
+          "ok": 20,
+          "wall_s": 2.781
+        }
+      ]
+    }
+  ]
+}
